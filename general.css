@@ -33,3 +33,7 @@ li a {
 li a:hover {
     background-color: black;
 }
+
+#home {
+    background-color: #ff9900
+}

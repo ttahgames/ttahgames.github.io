@@ -33,7 +33,7 @@ li a {
 li a:hover {
     background-color: black;
 }
-li a:active{
-    background-color: #ff9900;
+#home {
+    background-color: #ff9900
 }
 

@@ -37,3 +37,7 @@ li a {
 #current {
     background-color: #ff9900
 }
+
+li ul {
+  transition: .2s ease
+}

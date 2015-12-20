@@ -40,7 +40,8 @@ li a {
 }
 
 ul li {
-  transition: .3s ease
+  transition: .3s ease;
+  display:inline-block;
 }
 
 .twitter-timeline{

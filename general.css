@@ -52,3 +52,9 @@ li ul {
           box-sizing: border-box;
 }
 
+#homeStuff
+{
+    display:inline-block;
+    vertical-align:top;
+}
+

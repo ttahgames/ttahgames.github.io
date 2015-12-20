@@ -13,7 +13,7 @@ ul {
 li {
     display: inline;
     float: left;
-    transition:.3;
+   
 }
 
 a {
@@ -39,8 +39,8 @@ li a {
     background-color: #ff9900
 }
 
-li ul {
-  transition: .2s ease
+ul li {
+  transition: .3s ease
 }
 
 .twitter-timeline{

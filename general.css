@@ -67,7 +67,7 @@ ul li {
   }
 
   li:hover ul {
-      transition: .3s ease
+      transition: .3s ease;
     display: block;
   }
 

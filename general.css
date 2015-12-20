@@ -13,6 +13,7 @@ ul {
 li {
     display: inline;
     float: left;
+    transition:.3;
 }
 
 a {

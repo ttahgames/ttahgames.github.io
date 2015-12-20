@@ -58,17 +58,17 @@ li ul {
     vertical-align:top;
 }
 
-.subMenu li ul {
+ li ul {
     position: absolute;
     display: none;
     width: inherit;
   }
 
-  .subMenu li:hover ul {
+  li:hover ul {
     display: block;
   }
 
-  .subMenu li ul li {
+  li ul li {
     display: block;
   }
 

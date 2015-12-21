@@ -62,7 +62,7 @@ ul li {
 
 #homeStuff
 {
-    overflow-x:hidden;
+    display:inline-block;
     vertical-align:top;
 }
 

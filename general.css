@@ -62,7 +62,7 @@ ul li {
 
 #homeStuff
 {
-    display:inline;
+    float:right;
     vertical-align:top;
 }
 

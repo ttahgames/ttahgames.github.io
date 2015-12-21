@@ -1,4 +1,10 @@
+@font-face {
+    font-family: monoid;
+    src: url(Monoid-Regular.ttf);
+}
+
 body {
+    font-family:monoid;
     background-color: white;
 }
 
@@ -75,9 +81,4 @@ ul li {
       float:none;
     display: block;
   }
-  
-  @font-face {
-    font-family: monoid;
-    src: url(Monoid-Regular.ttf);
-}
 

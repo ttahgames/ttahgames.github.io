@@ -75,4 +75,9 @@ ul li {
       float:none;
     display: block;
   }
+  
+  @font-face {
+    font-family: monoid;
+    src: url(Monoid-Regular.ttf);
+}
 

@@ -82,5 +82,56 @@ ul li {
     display: block;
   }
 
+#canvasDiv{
+  float:left;
+}
+#images{
+  visibility: hidden;
+}
+#newGame{
+   background:url(newGame.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:300px;
+    height:75px;
+}
+#highScores{
+   background:url(highScores.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:300px;
+    height:75px;
+}
+#highScores : active{
+  background: url(highSelected.png)no-repeat;
+  cursor:pointer;
+    border:none;
+    width:300px;
+    height:75px;
+}
+#credits{
+
+   background:url(credits.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:300px;
+    height:75px;
+}
+#resetButton{
+  background:url(clearScores.png) no-repeat;
+  cursor:pointer;
+  border:none;
+  width: 300px;
+  height: 75px;
+}
+
+#scoresShown {
+  color: #fd0000;
+}
+#creditsInfo{
+  color: #fd0000;
+}
+
+
 
 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="general.css">
+		<title>Try This At Home</title>
+	</head>
+	<body onload = "submit()">
+		<img src="http://s17.postimg.org/kdznzqitb/Logo_Web.png" alt="Try This At Home" style="width: 100%;max-width:500px;margin:0 auto;">
+		<nav>
+    		<ul>
+        		<li id="notCurrent"><a href="/">Home</a></li>
+	        	<li id="notCurrent"><a href="/games">Games</a>
+	        	<ul class = "subMenu">
+	        		<li id ="current"><a href="tearout">Tear Out [Play Here]</a></li>
+	        		<li id="notCurrent"><a href="madjeff">Mad Jeff</a></li>
+	        		<li id="notCurrent"><a href="finalsweek">Finals Week</a></li>
+	        	</ul></li>
+        		<li id="notCurrent"><a href="/contact">Contact</a></li>
+        		<li id="notCurrent"><a href="/about">About</a></li>
+    		</ul>
+		</nav>
+
+		<div id = "canvasDiv">
+ <canvas tabindex = '1' id="myCanvas" width="600" height="600" style="border:1px solid #000000;">
+</canvas> 
+</div>
+
+<div id="stats">
+
+</div>
+<button type="button" id="newGame" onClick = "reloadPage()"></button>
+</br>
+<button type="button" id="highScores" onClick = "scoreScoreScore()"></button>
+</br>
+<div id = "scoresShown">
+	
+</div>
+</br>
+<button type="button"id="credits" onClick = "creditsFunc()"></button>
+</br>
+<div id = "creditsInfo"></div>
+</br>
+
+<div id = "menu">
+
+</div>
+
+<div id = "images">
+	<img id = "blockBlue" width = "100" height = "35" src="blockBlue.png" alt = "Blue Block">
+	<img id = "blockGreen" width = "100" height = "35" src="blockGreen.png" alt = "Green Block">
+	<img id = "blockOrange" width = "100" height = "35" src="blockOrange.png" alt = "Orange Block">
+	<img id = "blockYellow" width = "100" height = "35" src="blockYellow.png" alt = "Yellow Block">
+	<img id = "heart" width = "100" height = "35" src="heart.png" alt = "Heart">
+	<img id = "paddleFull" width = "100" height = "35" src="paddleFullSize.png" alt = "Paddle">
+	<img id = "paddleHalf" width = "50" height = "35" src="paddle.png" alt = "Small Paddle">
+	<img id = "ball" width = "100" height = "35" src="ball.png" alt = "Ball">
+	<img id = "paper" width = "100" height = "35" src="paper.png" alt = "Paper">
+	<img id = "zero" width = "35" height = "35" src="zero.png" alt = "Zero">
+	<img id = "nine" width = "35" height = "35" src="nine.png" alt = "Nine">
+	<img id = "eight" width = "35" height = "35" src="eight.png" alt = "Eight">
+	<img id = "seven" width = "35" height = "35" src="seven.png" alt = "Seven">
+	<img id = "six" width = "35" height = "35" src="six.png" alt = "Six">
+	<img id = "five" width = "35" height = "35" src="five.png" alt = "Five">
+	<img id = "four" width = "35" height = "35" src="four.png" alt = "Four">
+	<img id = "three" width = "35" height = "35" src="three.png" alt = "Three">
+	<img id = "two" width = "35" height = "35" src="two.png" alt = "Two">
+	<img id = "one" width = "35" height = "35" src="one.png" alt = "One">
+	<img id = "oneFull" width = "35" height = "35" src="oneFull.png" alt = "One">
+	<img id = "twoFull" width = "35" height = "35" src="twoFull.png" alt = "Two">
+	<img id = "threeFull" width = "35" height = "35" src="threeFull.png" alt = "Three">
+	<img id = "score" width = "35" height = "35" src="score.png" alt = "score">
+
+	<img id = "byPart1" width = "35" height = "35" src="byPart1.png">
+	<img id = "byPart2" width = "35" height = "35" src="byPart2.png">
+	<img id = "byPart3" width = "35" height = "35" src="byPart3.png">
+	<img id = "byPart4" width = "35" height = "35" src="byPart4.png">
+	<img id = "byPart5" width = "35" height = "35" src="byPart5.png">
+
+	<img id = "boPart1" width = "35" height = "35" src="boPart1.png">
+	<img id = "boPart2" width = "35" height = "35" src="boPart2.png">
+	<img id = "boPart3" width = "35" height = "35" src="boPart3.png">
+	<img id = "boPart4" width = "35" height = "35" src="boPart4.png">
+
+	<img id = "bbPart1" width = "35" height = "35" src="bbPart1.png">
+	<img id = "bbPart2" width = "35" height = "35" src="bbPart2.png">
+	<img id = "bbPart3" width = "35" height = "35" src="bbPart3.png">
+	<img id = "bbPart4" width = "35" height = "35" src="bbPart4.png">
+
+	<img id = "bgPart1" width = "35" height = "35" src="bgPart1.png">
+	<img id = "bgPart2" width = "35" height = "35" src="bgPart2.png">
+	<img id = "bgPart3" width = "35" height = "35" src="bgPart3.png">
+	<img id = "bgPart4" width = "35" height = "35" src="bgPart4.png">
+	<img id = "bgPart5" width = "35" height = "35" src="bgPart5.png">
+
+	<img id = "gameOver" width = "35" height = "35" src="gameOver.png">
+
+  	<audio id="hit1" type="audio/mpeg" src="hit1.mp3"></audio>
+  	<audio id="hit2" type="audio/mpeg" src="hit2.mp3"></audio>
+  	<audio id="wallHit" type = "audio/mpeg" src="wallHit.mp3"></audio>
+  	<audio id="countDown" type = "audio/mpeg" src="countdown.mp3"></audio>
+  	<audio id="deathSound" type = "audio/mpeg" src="death.mp3"></audio>
+  	<audio id="overSound" type = "audio/mpeg" src="overSound.mp3"></audio>
+  	<audio id="shrinkSound" type = "audio/mpeg" src="shrink.mp3"></audio>
+  	<audio id="backgroundMusic" type="audio/mpeg" src="kriatune.mp3"></audio>
+
+
+
+	
+
+
+</div>
+
+
+		</body>

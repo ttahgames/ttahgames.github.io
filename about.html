@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="general.css">
-		<link rel="icon" type="image/png" href="iconStuff.png" />
-		<title>Try This At Home</title>
-	</head>
-	<body>
-		<img src="http://s17.postimg.org/kdznzqitb/Logo_Web.png" alt="Try This At Home" style="width: 100%;max-width:500px;margin:0 auto;">
-		<nav>
-    		<ul>
-        		<li id="notCurrent"><a href="/">Home</a></li>
-	        	<li id="notCurrent"><a href="/games">Games</a>
-	        	<ul class = "subMenu">
-	        		<li id ="notCurrent"><a href="tearout">Tear Out [Play Here]</a></li>
-	        		<li id="notCurrent"><a href="madjeff">Mad Jeff</a></li>
-	        		<li id="notCurrent"><a href="finalsweek">Finals Week</a></li>
-	        		<li id="notCurrent"><a href="panic">Panic!</a></li>
-				<li id="notCurrent"><a href="extraterrestrialperception">Extra Terrestrial Perception</a></li>
-	        	</ul></li>
-        		<li id="notCurrent"><a href="/contact">Contact</a></li>
-        		<li id="current"><a href="/about">About</a></li>
-    		</ul>
-		</nav>
-		
-		<h2 style:"text-align:center;padding-left:30px;padding-top:30px;">Just having some fun,<BR> hope you will too.</h2>
-		
-		
-		<table>
-		<tr>
-		<td>
-		<a href="https://www.facebook.com/Try-This-At-Home-1663839303857877/?fref=nf"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/facebook-128.png" alt="Facebook" style="width:100%;max-width:75px;display:inline-block;"></a>
-		</td>
-		<td>
-		<a href="https://twitter.com/ttahgames"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/twitter-128.png" alt="Twitter" style="width:100%;max-width:75px;display:inline-block;"></a>
-		</td>
-		<td>
-		<a href="http://trythisathome.tumblr.com/"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/tumblr-128.png" alt="Tumblr" style="width:100%;max-width:75px;display:inline-block;"></a>
-		</td>
-		<td>
-		<a href="https://www.youtube.com/channel/UCTNnFZps_0Uf0icqGij4nVA"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/youtube-128.png" alt="YouTube" style="width:100%;max-width:75px;display:inline-block;"></a>
-		</td>
-		<td>
-		<a href="https://play.google.com/store/apps/developer?id=Try+This+At+Home"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/play_store-128.png" alt="Google Play" style="width:100%;max-width:75px;display:inline-block;"></a>
-		</td>
-		<td>
-		<a href="mailto:ttahgames@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/mail-128.png" alt="GMail" style="width:100%;max-width:75px;display:inline-block;"></a>
-		</td>
-		</tr>
-		</table>
-		
-		</body>
+<title>Try This At Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", Medium}
+.w3-bar,h1,button {font-family: "Ubuntu", Medium}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<head>
+	<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <img src="http://s17.postimg.org/kdznzqitb/Logo_Web.png" alt="Try This At Home" class = "w3-round" style="width: 100%;max-width:500px;margin:0 auto;">
+  <div class="w3-bar w3-dark-grey w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-amber w3-large w3-dark-grey" href="javascript:void(0);" onclick="w3_open()" title="Toggle Navigation Menu">☰</a>
+    <a href="index" class="w3-hide-small w3-bar-item w3-button w3-padding-large w3-amber w3-hover-amber">Home</a>
+    
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large w3-dark-grey w3-hover-amber" title="Notifications">Games <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-dark-grey">
+    <a href="extraterrestrialperception" class="w3-bar-item w3-button w3-hover-amber">Extra Terrestrial Perception</a>
+    <a href="panic" class="w3-bar-item w3-button w3-hover-amber">Panic!</a>
+    <a href="finalsweek" class="w3-bar-item w3-button w3-hover-amber">Finals Week</a>
+    <a href="madjeff" class="w3-bar-item w3-button w3-hover-amber">Mad Jeff</a>
+      <a href="tearout" class="w3-bar-item w3-button w3-hover-amber">Tear Out [Play Here]</a>
+    </div>
+  </div>
+  
+  <a href="contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">Contact</a>
+    <a href="about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">About</a>
+  
+  </div>
+	
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+	<div class="w3-hover-amber w3-dark-grey w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+  		<button onclick="w3_close()" class="w3-grey w3-bar-item w3-button w3-large">Close &times;</button>
+  		<a href="index" class="w3-bar-item w3-button w3-amber">Home</a>
+  		<a href="extraterrestrialperception" class="w3-bar-item w3-button">Extra Terrestrial Perception</a>
+		<a href="panic" class="w3-bar-item w3-button">Panic!</a>
+		<a href="finalsweek" class="w3-bar-item w3-button">Finals Week</a>
+		<a href="madjeff" class="w3-bar-item w3-button">Mad Jeff</a>
+		<a href="tearout" class="w3-bar-item w3-button">Tear Out [Play Here]</a>
+		<a href="contact" class="w3-bar-item w3-button">Contact</a>
+		<a href="about" class="w3-bar-item w3-button">About</a>
+	</div>
+  
+    <div class="w3-container w3-amber">
+  <h2>Just having some fun,<BR> hope you will too.</h2>
+</div>
+
+<div class="w3-container w3-amber">
+  
+	<div class="w3-container w3-amber w3-cell">
+  	<a href="https://www.facebook.com/Try-This-At-Home-1663839303857877/?fref=nf"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/facebook-128.png" alt="Facebook"></a>
+	</div>
+	
+	<div class="w3-container w3-amber w3-cell">
+  	<a href="https://twitter.com/ttahgames"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/twitter-128.png" alt="Twitter"></a>ne-block;"></a>
+	</div>
+	
+	<div class="w3-container w3-amber w3-cell">
+  	<a href="http://trythisathome.tumblr.com/"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/tumblr-128.png" alt="Tumblr"></a>
+	</div>
+	
+	<div class="w3-container w3-amber w3-cell">
+  	<a href="https://www.facebook.com/Try-This-At-Home-1663839303857877/?fref=nf"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/facebook-128.png" alt="Facebook"></a><a href="https://www.youtube.com/channel/UCTNnFZps_0Uf0icqGij4nVA"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/youtube-128.png" alt="YouTube" style="width:100%;max-width:75px;display:inline-block;"></a>
+	</div>
+	
+	<div class="w3-container w3-amber w3-cell">
+  	<a href="https://play.google.com/store/apps/developer?id=Try+This+At+Home"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/play_store-128.png" alt="Google Play" ></a>
+	</div>
+	    
+	<div class="w3-container w3-amber w3-cell">
+  	<a href="mailto:ttahgames@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/hexagon-black-social/60/mail-128.png" alt="GMail"></a>
+	</div>
+	
+</div> 
+  
+  </body>
+  </html>
+

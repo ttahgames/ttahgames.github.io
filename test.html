@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
-<script src="/lib/w3.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", Medium}
 .w3-bar,h1,button {font-family: "Ubuntu", Medium}
@@ -16,7 +15,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", Medium}
 <div class="w3-top">
   <img src="http://s17.postimg.org/kdznzqitb/Logo_Web.png" alt="Try This At Home" class = "w3-round" style="width: 100%;max-width:500px;margin:0 auto;">
   <div class="w3-bar w3-dark-grey w3-card-2 w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-amber w3-large w3-dark-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-amber w3-large w3-dark-grey" href="javascript:void(0);" onclick="toggleNavFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-amber w3-hover-amber">Home</a>
     
     <div class="w3-dropdown-hover w3-hide-small">
@@ -34,6 +33,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", Medium}
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">About</a>
   
   </div>
+	
+<script>
+	if(document.getElementById("navDemo").style.display == none)
+	{
+		document.getElementById("navDemo").style.display = "block";
+	}
+	else
+	{
+		document.getElementById("navDemo").style.display = "none";
+	}
+	</script>
 
 	<!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">

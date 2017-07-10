@@ -15,7 +15,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", Medium}
 <div class="w3-top">
   <img src="http://s17.postimg.org/kdznzqitb/Logo_Web.png" alt="Try This At Home" class = "w3-round" style="width: 100%;max-width:500px;margin:0 auto;">
   <div class="w3-bar w3-dark-grey w3-card-2 w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-amber w3-large w3-dark-grey" href="javascript:void(0);" onclick="toggleNavFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-amber w3-large w3-dark-grey" href="javascript:void(0);" onclick="w3_open()" title="Toggle Navigation Menu">☰</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-amber w3-hover-amber">Home</a>
     
     <div class="w3-dropdown-hover w3-hide-small">
@@ -35,27 +35,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", Medium}
   </div>
 	
 <script>
-	function toggleNavFunction()
-	{
-		document.getElementById("navDemo").style.display = "block";
-	if(document.getElementById("navDemo").style.display == none)
-	{
-		document.getElementById("navDemo").style.display = "block";
-	}
-	else
-	{
-		document.getElementById("navDemo").style.display = "none";
-	}
-	}
-	</script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
-	<!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
-</div>
+	<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+  		<button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  		<a href="#" class="w3-bar-item w3-button">Link 1</a>
+  		<a href="#" class="w3-bar-item w3-button">Link 2</a>
+  		<a href="#" class="w3-bar-item w3-button">Link 3</a>
+	</div>
   
    <div class="w3-cell-row">
 

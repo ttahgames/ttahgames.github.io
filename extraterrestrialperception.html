@@ -1,77 +1,109 @@
 <!DOCTYPE html>
 <html>
-<title>Try This At Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", Medium}
-.w3-bar,h1,button {font-family: "Ubuntu", Medium}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+
 <head>
-	<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
-</head>
-<body >
+	<title>Try This At Home</title>
+	<link rel="stylesheet" href="all.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="all.js"></script>
 
-<!-- Navbar -->
-<div class="w3-top" style = "background-color:#616161;">
-  <img src="logo.png" alt="Try This At Home" class = "w3-round" style="width: 100%;max-width:500px;margin:0 auto;">
-  <div class="w3-bar w3-dark-grey w3-card-2 w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-amber w3-large w3-dark-grey" href="javascript:void(0);" onclick="w3_open()" title="Toggle Navigation Menu">☰</a>
-    <a href="index" class="w3-hide-small w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
-    
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large w3-hover-amber w3-amber" title="Notifications">Games <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-dark-grey">
-    <a href="extraterrestrialperception" class="w3-bar-item w3-button w3-hover-amber w3-amber">Extra Terrestrial Perception</a>
-    <a href="panic" class="w3-bar-item w3-button w3-hover-amber">Panic!</a>
-    <a href="finalsweek" class="w3-bar-item w3-button w3-hover-amber">Finals Week</a>
-    <a href="madjeff" class="w3-bar-item w3-button w3-hover-amber">Mad Jeff</a>
-    </div>
-  </div>
-  
-  <a href="contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">Contact</a>
-    <a href="about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">About</a>
-  
-  </div>
-	
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.width = "100%";
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>
 
-	<div class="w3-hover-amber w3-dark-grey w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-  		<button onclick="w3_close()" class="w3-grey w3-bar-item w3-button w3-large">Close &times;</button>
-  		<a href="index" class="w3-bar-item w3-button">Home</a>
-  		<a href="extraterrestrialperception" class="w3-bar-item w3-button w3-amber">Extra Terrestrial Perception</a>
-		<a href="panic" class="w3-bar-item w3-button">Panic!</a>
-		<a href="finalsweek" class="w3-bar-item w3-button">Finals Week</a>
-		<a href="madjeff" class="w3-bar-item w3-button">Mad Jeff</a>
-		<a href="contact" class="w3-bar-item w3-button">Contact</a>
-		<a href="about" class="w3-bar-item w3-button">About</a>
+	<img src="logo.png" alt="Person" style="max-width: 100%; height: auto">
+
+
+	<div class="navBar w3-hide-small">
+		<ul >
+
+			<li><a href="index.html" class="navItem">Home</a></li>
+
+			<li class="dropdown">
+			<a href="games.html" class="dropbtn active">Games</a>
+			<div class="dropdown-content">
+			  <a href="#" class="active">Extra Terrestrial Perception</a>
+			  <a href="untitled.html">Untitled [WIP]</a>
+			  <a href="panic.html">Panic!</a>
+			  <a href="madjeff.html">Mad Jeff</a>
+			</div>
+			</li>
+
+			<li><a href="about.html" class="navItem">About</a></li>
+			<li><a href="contact.html" class="navItem">Contact</a></li>
+
+			<!-------------- Eventually link to tminusinfinity site?---------------------->
+			<li style="float:right"><a href="http://www.soundcloud.com/tminusinfinity" class="navItem">TMinusInfinity</a></li>
+		  
+		</ul> 
 	</div>
-	
-	   <div class="w3-cell-row w3-amber">
 
-  <div class="w3-container w3-amber w3-col m6 w3-center">
-    <a href = "http://store.steampowered.com/app/629210/Extra_Terrestrial_Perception/?beta=0"><img src = "http://guides.uufix.com/wp-content/uploads/2016/06/s-icon.png" width="250" height="150" alt = "Buy Here""></a>
-		<iframe width="600" height="350" src="https://www.youtube.com/embed/IxmzSvGPD2Y" frameborder="0" allowfullscreen></iframe>
-  </div>
-		   
-		   <div class="w3-container w3-amber w3-col m6 w3-center">
-			<h2>This game is about being <BR>
-				abducted by aliens, and <BR> psychic powers.<BR></h2>
-      <img src="http://cdn.edgecast.steamstatic.com/steam/apps/629210/ss_7ab1292314fa48afb2f9cc17070346a8cdd2b5a5.600x338.jpg?t=1497394185" alt="ETP Screen Shot" style="width:100%;max-width:600px;vertical-align:top;padding:30px;display:inline-block;">
-          	 </div>	
 
-</div> 
-  
-  </body>
-  </html>
+
+	<div class="w3-bar w3-amber w3-hide-medium w3-hide-large" style="display: none;top:0px;position: sticky;z-index: 1000" id="mobileMenu">
+		<button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+		<a href="games.html" class="w3-bar-item w3-button w3-mobile">Games</a>
+	  	<a href="#" class="w3-bar-item w3-black w3-text-amber w3-button w3-mobile">Extra Terrestrial Perception</a>
+	  	<a href="untitled.html" class="w3-bar-item w3-grey w3-button w3-mobile">Untitled [WIP]</a>
+	  	<a href="panic.html" class="w3-bar-item w3-grey w3-button w3-mobile">Panic!</a>
+	  	<a href="madjeff.html" class="w3-bar-item w3-grey w3-button w3-mobile">Mad Jeff</a>
+	  	<a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
+	  	<a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+
+	  	<!-------------- Eventually link to tminusinfinity site?---------------------->
+	  	<a href="http://www.soundcloud.com/tminusinfinity" class="w3-bar-item w3-button w3-mobile">TMinusInfinity</a>
+	</div>
+
+	<div class="w3-amber w3-hide-medium w3-hide-large" style="top:0px;position: sticky; z-index: 1000">
+	  <button class="w3-button w3-amber w3-xlarge"  id="menuButton" onclick="w3_open()">Ξ</button>
+	</div>
+</head>
+
+
+<body>
+	<div class="w3-row">
+		<h1>Extra Terrestrial Perception</h1>
+	</div>
+
+	<div class="w3-row">
+		<div class="w3-half w3-padding-small">
+
+			<div style="position:relative;padding-top: 56.25%">
+				<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/IxmzSvGPD2Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+
+			<a href="http://store.steampowered.com/app/629210/Extra_Terrestrial_Perception/?beta=0."><img src="https://www.pcper.com/files/imagecache/article_max_width/news/2014-06-15/SteamLogo.png" alt="Buy ETP" style="width:100%;max-width:400px;vertical-align:top;padding:10px;display: block;margin-left: auto;margin-right: auto"></a>
+
+			<h5>
+				Walking outside one night, bright lights appear overhead. You wake aboard an alien ship. Use your resourcefulness, along with newfound psychic powers to overcome the enemies and obstacles that stand in the way of escape.
+				</br>
+				</br>
+				Features:
+				<ul>
+				    <li>&nbsp &nbsp &nbsp &nbsp *Telekinesis - Move objects and enemies.</li>
+				    <li>&nbsp &nbsp &nbsp &nbsp *Electrokinesis - Burn everything! Mess with electronics.</li>
+				    <li>&nbsp &nbsp &nbsp &nbsp *Mind Control - Step into your enemies shoes. Use their weapons against them.</li>
+				    <li>&nbsp &nbsp &nbsp &nbsp *Tool building - Scrap what you have and find spare parts to build new tools and augment your powers.</li>
+				    <li>&nbsp &nbsp &nbsp &nbsp *Electromagnet - Steal enemy weapons. Manipulate metal and electronics.</li>
+				    <li>&nbsp &nbsp &nbsp &nbsp *Grappling Hook - Pull things to you. Pull you to places :)</li>
+				    <li>&nbsp &nbsp &nbsp &nbsp *Fan - Blast anything and everything out of your way.</li>
+				</ul>
+				</br>
+				This is a short action/adventure game. Fight, solve puzzles, and explore as you make your way to freedom. 
+			</h5>
+		</div>
+
+
+		<div class="w3-half w3-padding-small">
+			
+			<img src="http://cdn.edgecast.steamstatic.com/steam/apps/629210/ss_7ab1292314fa48afb2f9cc17070346a8cdd2b5a5.600x338.jpg?t=1497394185" alt="ETP Screen Shot" style="width:100%;max-width:600px;vertical-align:top;width: 100%;display:block;margin-right: auto;margin-left: auto" class="w3-padding-small">
+
+			<img src="https://steamcdn-a.akamaihd.net/steam/apps/629210/ss_b728862339298a00b1825161d102abc99648f5eb.1920x1080.jpg?t=1497394185" alt="ETP Screen Shot" style="width:100%;max-width:600px;vertical-align:top;width: 100%;display:block;margin-right: auto;margin-left: auto" class="w3-padding-small">
+
+			<img src="https://steamcdn-a.akamaihd.net/steam/apps/629210/ss_ee00d7486c7af130acf0c1d0644366b68c643c93.1920x1080.jpg?t=1497394185" alt="ETP Screen Shot" style="width:100%;max-width:600px;vertical-align:top;width: 100%;display:block;margin-right: auto;margin-left: auto" class="w3-padding-small">
+		</div>
+	</div>
+
+<h4>© 2018 Try This At Home L.L.C.</h4>
+</body>
+</html>

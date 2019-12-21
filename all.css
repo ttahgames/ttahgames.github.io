@@ -213,3 +213,34 @@ li.dropdown {
 .w3-half:active .btn-design8{
 	color: var(--selectColor)!important;
 }
+
+.btn-design6 {
+	background: none;
+	color: var(--mainColor)!important;
+	transition: all 280ms ease-in-out 0s;
+	letter-spacing: 1px;
+}
+.btn-design6::after, .btn-design6::before {
+ border: 1px solid rgba(255, 255, 255, 0);
+ bottom: 0;
+ content: " ";
+ display: block;
+ margin: 15px auto;
+ position: relative;
+ transition: all 280ms ease-in-out 0s;
+ width: 0;
+ box-shadow: 0px 0px 0px var(--mainColor);
+}
+.btn-design6:hover {
+	letter-spacing: 4px;
+}
+.btn-design6:hover::after, .btn-design6:hover::before {
+ border: 1px solid ;
+ transition: width 350ms ease-in-out 0s;
+ width: 100%;
+ box-shadow: 0 0 19px 1px ;
+}
+.btn-design6:active {
+	color: var(--selectColor)!important;
+	transition: 0ms;
+}

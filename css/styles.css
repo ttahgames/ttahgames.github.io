@@ -94,23 +94,23 @@
 }
 
 .descriptionP{
-  font-size: 1vw;
+  font-size: 2vh;
 }
 
 .overlayP1 {
-  font-size:2vw;
+  font-size:4vw;
   position:absolute;
   margin-top: -70vh;
-  margin-left: 17vw;
+  margin-left: 8vw;
   color:white;
   pointer-events:none;
   text-shadow: 0px 0px 40px black;
 }
 
 .overlayP2 {
-  font-size: 2vw;
+  font-size: 4vw;
   position:absolute;
-  margin-top: -75vh;
+  margin-top: -80vh;
   margin-left:60vw;
   color:white;
   width: 30vw;
